@@ -1,0 +1,49 @@
+# Git
+## Definition
+source control/version control : manage code
+git is a type of source control/version control
+## Command of Git
+
+git init (init git in project)
+git clone
+git pull origin <branch name>(get data from remote repository to local)
+git add -A / git add .  (adding all files)
+git commit -m "message"
+git push
+git status
+ ## Working on Branch
+git branch (to check what is branch current we have)
+git branch add+name of branch (create new branch)
+git checkout name of branch want to switch
+
+but this is local branch => we have to push this branch to remote repository
+git push --set-upstream origin add+name of branch
+
+and the end of this if this feature is good => have to merge this branch to master
+
+## Git merge name of branch
+git clean -f -d // clear all file is no added in git
+## Git Setting
+### Remove your user settings:
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global --unset credential.helper
+### Or all your global settings:
+git config --global --unset-all
+
+
+## Generateig SSH 
+Using ssh to push/clone code without email/username and password
+### Git Bash on Windows / GNU/Linux / macOS:
+ssh-keygen -t rsa -C "your.email@example.com" -b 4096
+###  Windows Command Line:
+type %userprofile%\.ssh\id_rsa.pub | clip
+### macOS:
+pbcopy < ~/.ssh/id_rsa.pub
+### GNU/Linux (requires the xclip package):
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
+
+### To set repository-specific username/email configuration:
+git config user.name "huuphuoc161"
+git config user.email "nguyenhuuphuoc1806@gmail.com"

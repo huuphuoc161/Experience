@@ -1,0 +1,41 @@
+# Create flutter app by command line
+
+flutter create app_name
+cd app_name
+flutter devices 	#check device 
+flutter run 
+
+# Create flutter app in another folder
+
+View > Command palette
+choose flutter: New Project
+Select directory to save project
+write the name of project
+
+# Select Device to install app
+
+View > Command palette
+write 
+Flutter: Select device
+Select device
+
+
+# IDE, Compiler, Editer
+
+
+# Cirlce life management - State screen Management
+
+Getx - 
+
+provider
+
+Bloc
+
+# Architecture application
+
+MVC
+MVVM
+MVM
+
+# Solid
+
